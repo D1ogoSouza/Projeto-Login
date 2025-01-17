@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="estilo/first.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
     <title>Document</title>
    
 </head>
@@ -16,17 +17,33 @@
 
              <div id="ft"></div>
 
-            <h1>Login</h1>
+             
+            <div id="formulario">
+                <h1>Login</h1>
 
             <p>Seja bem-vindo(a), novamente. Faça login para acessar sua conta e poder fazer as configurações do seu ambiente.</p>
-
-            <div id="formulario">
                 <form action="php.cadastro" method="post" autocomplete="on">
                 
-                    <div class="dd"><span class="material-icons">person</span><input type="email" name="log" id="ilog" required></div>
-                    <div class="dd"><span class="material-icons">lock</span><input type="password" name="pass" id="ipass" required minlength="8"></div>
-                    <div class="btn"><input type="submit" value="ENTRAR"></div>
-                    <div class="btn"><input type="button" value="Esqueci a senha" ><span class="material-icons">email</span></div>
+                    <div class="dados">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="log" id="ilog" required placeholder=" Seu email">
+                        <label for="ilog">log</label>
+                    </div>
+
+                    <div class="dados">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="pass" id="ipass" required minlength="8" autocomplete="current-password" placeholder=" Sua senha">
+                        <label for="ipass">pas</label>
+                    </div>
+
+                    
+                        <input type="submit" value="ENTRAR">
+                    
+
+                    
+                        <a href="#" class="botao">Esqueci a senha <span class="material-icons">email</span></a>
+                        
+                    
                 </form>
             </div>
         </section>
