@@ -38,7 +38,7 @@ main{
     background: darkslateblue url('../imagens/pexels-nbasak-30239488.jpg') no-repeat center center;
     background-size: cover;
     width: 260px;
-    height: 195px;
+    height: 190px;
 }
 
 div#formulario{
@@ -68,7 +68,7 @@ div#formulario> p {
 div.dados{
     background-color: rgb(69, 222, 181);
     display: block;
-    width: 98.9%;
+    width: 98%;
      height: 30px;
      padding: 2px;
     margin: 5px 0px;
